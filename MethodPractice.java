@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class MethodPractices{
+public class MethodPractice{
 	public static void judgePrime(int n){
 		int i;
 		for(i=2;i<n;i++){
