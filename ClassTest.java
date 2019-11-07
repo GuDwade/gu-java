@@ -1,3 +1,4 @@
+import java.util.Arrays;
 public class ClassTest{
 	public static void main(String[] args){
 		Fruit c=new Fruit("橘子",1000);
@@ -25,6 +26,7 @@ public class ClassTest{
 		coco[2]=yuan;
 		for(int w=0;w<coco.length;w++){
 			System.out.println(coco[w].FruitName+"的收益是："+coco[w].gain());
+			
 		}
 		}
 		
