@@ -1,11 +1,11 @@
-import java.util.Arrays;
+
 public class ClassTest{
 	public static void main(String[] args){
-		Fruit c=new Fruit("橘子",1000);
-		System.out.println("水果名字:"+c.FruitName);
-		System.out.println("投入:"+c.input);
-		int get1=c.gain();
-		System.out.println("收益:"+get1);
+		// Fruit c=new Fruit("橘子",1000);
+		// System.out.println("水果名字:"+c.FruitName);
+		// System.out.println("投入:"+c.input);
+		// int get1=c.gain();
+		// System.out.println("收益:"+get1);
 		Apple app=new Apple("苹果",12000,200);
 		System.out.println("水果名字:"+app.FruitName);
 		System.out.println("投入:"+app.input);
@@ -25,13 +25,10 @@ public class ClassTest{
 		coco[1]=coconut;
 		coco[2]=yuan;
 		for(int w=0;w<coco.length;w++){
-			System.out.println(coco[w].FruitName+"的收益是："+coco[w].gain());
-			
+			System.out.println(coco[w].FruitName+"的收益是："+coco[w].gain());	
 		}
 		}
-		
 	}
-
 class Fruit{
 	String FruitName;
 	int input;
@@ -47,8 +44,6 @@ class Fruit{
 class Apple extends Fruit{
 	int money;
 	Apple(String e,int g,int f){
-		// FruitName=e;
-		// input=g;
 		super(e,g);
 		money=f;
 	}
@@ -65,6 +60,5 @@ class Banana extends Fruit{
 		int effort=3*input;
 		return  effort;
 	}
-	
 }
 
