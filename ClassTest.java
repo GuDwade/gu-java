@@ -18,9 +18,9 @@ public class ClassTest{
 		int get3=ban.gain();
 		System.out.println("收益:"+get3);
 		Fruit[] coco=new Fruit[3];
-		Fruit melon=new Fruit("西瓜",10000);
-		Fruit coconut=new Fruit ("椰子",12000);
-		Fruit yuan=new Fruit("桂圆",13456);
+		Fruit melon=new Fruit("红香蕉",10000);
+		Fruit coconut=new Banana("帝王蕉",10000);
+		Fruit yuan=new Apple("红富士",10000,200);
 		coco[0]=melon;
 		coco[1]=coconut;
 		coco[2]=yuan;
