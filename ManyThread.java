@@ -1,21 +1,3 @@
-public class ManyThread{
-	public static void main(String[]args){
-		// ThreadTest test=new ThreadTest();
-		// Thread t1=new Thread(test);
-		// Thread t2=new Thread(test);
-		// Thread t3=new Thread(test);
-		// t1.start();
-		// t2.start();
-		// t3.start();
-		
-		ThreadTest2 t1=new ThreadTest2(1);
-		t1.start(); 
-		ThreadTest2 t2=new ThreadTest2(3);
-		t2.start(); 
-		ThreadTest2 t3=new ThreadTest2(5);
-		t3.start(); 		
-	}
-}
 class ThreadTest2 extends Thread{
 	int num;
 	ThreadTest2(){
@@ -30,6 +12,17 @@ class ThreadTest2 extends Thread{
 		Thread.sleep(num);
 	}catch(InterruptedException e){}
 	System.out.println(Thread.currentThread().getName()+"睡眠结束");
+	}
+}
+public class ManyThread{
+	public static void main(String[]args){
+        Thread t=new ThreadTest2();
+		Thread t1=new Thread(t);
+		t1.start(); 
+		Thread t2=new Thread(t);
+		t2.start(); 
+		Thread t3=new Thread(t);
+		t3.start(); 		
 	}
 }
 class ThreadTest implements Runnable{
@@ -48,4 +41,5 @@ class ThreadTest implements Runnable{
 	System.out.println(Thread.currentThread().getName()+"睡眠结束");
 	}
 }
+
  
