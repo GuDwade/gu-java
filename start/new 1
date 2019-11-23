@@ -1,0 +1,22 @@
+public static void printfPrime(){
+		int i;
+		int j;
+		for(i=4;i<=100;i++){
+			for(j=2;j<i;j++){
+				if(i%j==0){
+					break;
+				}
+			if(j==i){
+			System.out.println(i);
+			}
+			}
+		}
+	}
+	public static int minCommonDivisor(int x,int y){
+		while(x%y>0){
+			int r=x%y;
+			x=y;
+			y=r;
+		}
+		return y;
+	}
