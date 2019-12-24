@@ -7,9 +7,7 @@ import javax.swing.*;
 public class Bank
 {
     static int temp=10000;
-    static int tm=0;/*filename.createNewFile()
-	File filename=new File("D:\\Eclipse Workspace\\Training\\user\\"+shuru1.getText()+"\\name.txt");fileID.mkdirs();
-	File fileID=new File("D:\\Eclipse Workspace\\Training\\user\\"+shuru1.getText());if(!fileID.exists())*/
+    static int tm=0;
     private static void createAndShowGUI()
     {
         JFrame f =new JFrame("中国银行");
