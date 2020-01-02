@@ -3,7 +3,7 @@ public class StringLearning {
         //构造方式
         String str="gufucheng";
         String str7="gufucheng";
-        System.out.println("gufucheng".equals(str));
+         System.out.println("gufucheng".equals(str));
         System.out.println(str.equals(str7));//常量池中，指向同一对象
         String str1=new String("gufucheng");
         String str0=new String("gufucheng");//
