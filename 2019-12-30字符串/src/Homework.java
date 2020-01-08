@@ -1,5 +1,5 @@
 public class Homework {
-    
+
     public int compareTo(String s1, String s2){
         int shortLen = (s1.length()>=s2.length())?s2.length():s1.length();
         for(int i = 0; i < shortLen; i++){
@@ -36,7 +36,7 @@ public class Homework {
         return false;
     }
 
-    public int IndexOf(String s1, String s2){
+    public int indexOf(String s1, String s2){
         int count = 0;
         for(int i = 0; i < s1.length(); i++){
             if(s1.charAt(i) == s2.charAt(0)){
@@ -61,7 +61,7 @@ public class Homework {
            System.out.println(hw.contains("gufucheng","fu"));
            System.out.println(hw.contains("gufucheng","fucheng"));
            System.out.println(hw.contains("gufucheng","fuchengh"));
-           System.out.println(hw.IndexOf("yangsilin","yan"));
+           System.out.println(hw.indexOf("yangsilin","yan"));
            System.out.println(hw.compareTo("ab","ac"));
            System.out.println(hw.compareTo("abc","ab"));
 
