@@ -39,8 +39,8 @@ public class Last {
                     i = i - j + 1;
                     j = 0;
                     sb = sb.append(String.valueOf(s1[i - 1]));
-                }
-            }
+              }
+        }
         String str=sb.toString();
         if(time==0){
             return  s;
