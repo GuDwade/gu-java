@@ -54,6 +54,7 @@ public class Last {
        System.out.println(Arrays.toString(arr));
        String str=replace("hello","ello","ehe");
        System.out.println(str);
+
     }
 
 }
