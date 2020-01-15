@@ -1,16 +1,4 @@
-class Node{
-    int val;
-    Node next;
-    Node(int val,Node next){
-        this.val=val;
-        this.next=next;
-    }
-    Node(int val){
-        this(val,null);
-    }
-}
 public class MyLinkList {
-
     public static Node pushFront(Node head,int val){
         Node nhead=new Node(val);
         nhead.next=head;
