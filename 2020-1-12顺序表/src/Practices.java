@@ -1,4 +1,4 @@
-public class Practices {
+public class  Practices {
     public static  Node reverseList(Node head) {
         Node cur=head;
         Node nHead=null;
