@@ -1,11 +1,3 @@
-class ListNode {
-    int val;
-    ListNode next = null;
-
-    ListNode(int val) {
-        this.val = val;
-    }
-}
 public class deleteDuplication {
     public static ListNode deleteDuplication(ListNode pHead){
         if(pHead==null){
