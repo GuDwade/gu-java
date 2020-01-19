@@ -1,3 +1,5 @@
+import java.lang.reflect.Array;
+
 public class deleteDuplication {
     public static ListNode deleteDuplication(ListNode pHead){
         if(pHead==null){
@@ -48,6 +50,7 @@ public class deleteDuplication {
         deleteDuplication test=new deleteDuplication();
         test.printf(n1);
         test.printf(deleteDuplication(n1));
+
     }
 }
 
