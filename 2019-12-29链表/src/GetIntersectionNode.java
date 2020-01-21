@@ -1,16 +1,4 @@
 public class GetIntersectionNode {
-    public  static  void print(ListNode head){
-        if(head==null){
-            return;
-        }
-        ListNode cur=head;
-        while(cur!=null){
-            System.out.printf("%s\t",cur.val);
-            cur=cur.next;
-        }
-        System.out.println();
-    }
-
     public static ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         if(headA==null||headB==null){
             return null;
@@ -57,5 +45,23 @@ public class GetIntersectionNode {
             headB=headB.next;
         }
         return headA;
+    }
+
+    public static void main(String[] args) {
+        ListNode n1=new ListNode(1);
+        ListNode n2=new ListNode(2);
+        ListNode n3=new ListNode(3);
+        ListNode n4=new ListNode(4);
+        ListNode n5=new ListNode(5);
+        ListNode n6=new ListNode(6);
+        n1.next=n2;
+        n2.next=n3;
+        n3.next=n4;
+        n4.next=n5;
+        n5.next=n6;
+        ListNode n7=new ListNode(5);
+        n7.next=n3;
+        ListNode.print(getIntersectionNode1(n1,n7));
+        ListNode.print(getIntersectionNode(n1,n7));
     }
 }
