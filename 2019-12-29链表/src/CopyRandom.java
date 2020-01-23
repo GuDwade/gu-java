@@ -3,12 +3,13 @@ class Node {
     Node next;
     Node random;
 
-    public Node(int val) {
+    Node(int val) {
         this.val = val;
         this.next = null;
         this.random = null;
     }
-}public class CopyRandomList {
+}
+public class CopyRandomList {
     public static Node copyRandomList(Node head) {
         if (head == null) {
             return null;
