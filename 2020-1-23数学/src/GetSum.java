@@ -9,7 +9,7 @@ public class GetSum {
         }
     }
 
-    public static int guessNumber(int n) {
+    /*public static int guessNumber(int n) {
         int l = 1;
         int r = n;
         int mid = l + (r - l)/2;
@@ -26,6 +26,7 @@ public class GetSum {
         }
         return 1;
     }
+    */
 
     public static void main(String[] args) {
         System.out.println(getSum(101,259));
