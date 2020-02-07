@@ -22,14 +22,17 @@ public class MyStack {
     }
     //栈顶元素
     public int peek(){
+
         return array[size - 1];
     }
 
     public int size(){
+
         return size;
     }
 
     public boolean empty(){
+
         return size == 0;
     }
 
