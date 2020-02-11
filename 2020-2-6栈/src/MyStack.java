@@ -41,6 +41,7 @@ public class MyStack {
             System.out.print(peek() + " ");
             pop();
         }
+        System.out.println();
     }
     public static void main(String[] args) {
         MyStack st = new MyStack(2);
@@ -56,6 +57,6 @@ public class MyStack {
         st.pop();
         System.out.println(st.size());
         st.bianli();
-
+        System.out.println(st.size);
     }
 }
