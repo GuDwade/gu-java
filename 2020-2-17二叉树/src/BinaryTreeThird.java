@@ -45,5 +45,44 @@ public class BinaryTreeThird {
             return  root;
         }
     }
-
+    //存储路径
+    public boolean getPath(TreeNode root,TreeNode node,Stack<TreeNode>st){
+        if (root==null){
+            return false;
+        }
+        st.push(root);
+        if(root==node){
+            return true;
+        }
+        if(getPath(root.left,node,st)){
+            return true;
+        }
+        if(getPath(root.right,node,st)){
+            return true;
+        }
+        st.pop();
+        return false;
+    }
+    //栈顶元素判断
+    public TreeNode lowestCommonAncestor1(TreeNode root, TreeNode p, TreeNode q) {
+        Stack<TreeNode>stackpP=new Stack<>();
+        Stack<TreeNode>stackpQ=new Stack<>();
+        getPath(root,p,stackpP);
+        getPath(root,q,stackpQ);
+        while (stackpP.size()!=stackpQ.size()){
+            if (stackpP.size()>stackpQ.size()){
+                stackpP.pop();
+            }else{
+                stackpQ.pop();
+            }
+        }
+        while(stackpP.size()>0){
+            if(stackpP.peek()==stackpQ.peek()){
+                break;
+            }
+            stackpP.pop();
+            stackpQ.pop();
+        }
+        return stackpP.peek();
+    }
 }
