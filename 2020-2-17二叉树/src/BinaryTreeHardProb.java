@@ -1,4 +1,4 @@
-public class BinaryTreeHardPro {
+public class BinaryTreeHardProb {
     public static TreeNode prev=null;
     //中序遍历将二叉搜索树排序 改变链表方向
     public void _Convert(TreeNode root) {
