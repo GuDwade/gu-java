@@ -33,7 +33,7 @@ public class Day2 {
         }
         return ret;
     }
-    
+
     public static  void print(int[][]arr){
         int sz=arr.length;
         for(int i=0;i<sz;i++){
