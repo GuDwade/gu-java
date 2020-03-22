@@ -1,6 +1,15 @@
+import java.util.Comparator;
+import java.util.PriorityQueue;
+
+class IntegerComparator implements Comparator<Integer> {
+    @Override
+    public int compare(Integer o1, Integer o2) {
+        return o2-o1;
+    }
+}
 public class Day15 {
     //最小的K个数
-    public int[] getLeastNumbers(int[] arr, int k) {
+    public int[] getLeastNumbers1(int[] arr, int k) {
         if (k == 0 || arr.length == 0) {
             return new int[0];
         }
@@ -45,5 +54,28 @@ public class Day15 {
         int tmp = arr[i];
         arr[i] = arr[j];
         arr[j] = tmp;
+    }
+
+    public int[] getLeastNumbers(int[] arr, int k) {
+        if (k == 0 || arr.length == 0) {
+            return new int[0];
+        }
+        PriorityQueue<Integer>pq=new PriorityQueue<>(new IntegerComparator());
+        for(int val:arr){
+            if(pq.size()<k){
+                pq.offer(val);
+            }else{
+                if(val<pq.peek()){
+                    pq.poll();
+                    pq.offer(val);
+                }
+            }
+        }
+        int []ret=new int[k];
+        int i=0;
+        for(int val:pq){
+            ret[i++]=val;
+        }
+        return  ret;
     }
 }
