@@ -13,7 +13,7 @@ public class Day14 {
     public int longestPalindrome(String s) {
         int[]chars=new int[58];
         for(char ch:s.toCharArray()){
-            chars[ch-'a']++;
+            chars[ch-'A']++;
         }
         int len=0;
         for(int x:chars ){
