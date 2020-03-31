@@ -40,7 +40,7 @@ public class Day24 {
         if (point == null || !hasOcean) {
             return -1;
         }
-        
+
         return grid[point[0]][point[1]] - 1;
     }
 }
