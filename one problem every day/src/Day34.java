@@ -28,6 +28,7 @@ public class Day34 {
         return count;
 
     }
+
     public  static boolean isMove(int i,int j,int k){
         int sum1=0;
         int sum2=0;
