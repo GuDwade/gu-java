@@ -3,13 +3,13 @@ import java.util.List;
 
 public class Day35 {
     //括号生成
-    public static List<String> res = new ArrayList<>();
-    public static List<String> generateParenthesis(int n) {
+     List<String> res = new ArrayList<>();
+    public  List<String> generateParenthesis(int n) {
         dfs(n, n, "");
         return res;
     }
 
-    public static void dfs(int left, int right, String curStr) {
+    public  void dfs(int left, int right, String curStr) {
         if (left == 0 && right == 0) { // 左右括号都不剩余了，递归终止
             res.add(curStr);
             return;
