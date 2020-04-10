@@ -64,6 +64,6 @@ public class Day35 {
 
     public static void main(String[] args) {
         String str=longestCommonPrefix(new String[]{"flower","flow","floe"});
-        generateParenthesis(3);
+
     }
 }
