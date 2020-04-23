@@ -5,13 +5,13 @@ import java.util.Queue;
 
 public class Day46 {
     //二叉树的右视图
-    //BFS
+    //DFS
     List<Integer>list=new ArrayList<>();
     public List<Integer> rightSideView0(TreeNode root) {
-        bfs(root,0);
+        dfs(root,0);
         return  list;
     }
-    private void bfs(TreeNode root,int depth){
+    private void dfs(TreeNode root,int depth){
         if(root==null){
             return;
         }
@@ -19,11 +19,11 @@ public class Day46 {
             list.add(root.val);
         }
         depth++;
-        bfs(root.right,depth);
-        bfs(root.left,depth);
+        dfs(root.right,depth);
+        dfs(root.left,depth);
     }
 
-    //DFS
+    //BFS
     public List<Integer> rightSideView(TreeNode root) {
         if(root==null){
             return new ArrayList<>();
