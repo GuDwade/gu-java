@@ -61,6 +61,7 @@ public class Pratice {
 
         return  find(root.right,node);
     }
+
     //栈记录路径
     public TreeNode lowestCommonAncestor1(TreeNode root, TreeNode p, TreeNode q) {
         if (root == p || root == q) {
