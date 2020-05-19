@@ -10,7 +10,7 @@ public class Day34 {
     static  int[]dx={0,1,-1,0};//右下上左
     static  int[]dy={1,0,0,-1};
     static  int[]ps={1,0,3,1};
-    //地下迷宫 
+    //地下迷宫
     public static void main(String[] args) {
         Scanner scan=new Scanner(System.in);
         list=new ArrayList<>();
