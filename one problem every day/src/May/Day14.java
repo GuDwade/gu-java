@@ -16,6 +16,6 @@ public class Day14 {
     //除了一个数出现一次以外其余每个数都出现3次
     public int singleNumber2(int[] nums) {
 
-
+        return  0;
     }
 }
