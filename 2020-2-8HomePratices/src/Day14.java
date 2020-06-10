@@ -42,6 +42,7 @@ public class Day14 {
 
         return list;
     }
+	
     //DFS
     List<Integer>list=new ArrayList<>();
     public List<Integer> rightSideView1(TreeNode root) {

@@ -1,5 +1,6 @@
 public class NumberToWords {
     //整数转换英文表示
+	
     String[]small={"Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine", "Ten",
             "Eleven","Twelve","Thirteen","Fourteen","Fifteen","Sixteen","Seventeen","Eighteen","Nineteen"};
     String[]decade={"","","Twenty","Thirty","Forty","Fifty","Sixty","Seventy","Eighty","Ninety"};

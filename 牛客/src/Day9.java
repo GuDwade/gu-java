@@ -29,6 +29,7 @@ public class Day9 {
         int n=scan.nextInt();
         int a=0;
         int b=1;
+		//寻找离n最接近的左右斐波那契数    
         while(b<=n){
             int tmp=a+b;
             a=b;

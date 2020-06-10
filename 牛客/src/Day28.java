@@ -14,7 +14,8 @@ public class Day28 {
            System.out.println(String.format("%.2f", result) + "%");
         }
     }
-
+	
+	//错排算法
     private static double falseSort(int n) {
         if (n==1){
             return 0;

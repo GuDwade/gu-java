@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Day38 {
-    //二维数组打印
+    //二维数组打印 
     public static int[] arrayPrint(int[][] arr, int n) {
         int[]ret=new int[n*n];
         int idx=0;

@@ -32,7 +32,7 @@ public class Day40 {
         return max;
     }
 
-    //坐标移动
+    //坐标移动 
     public static void game() {
         Scanner scan=new Scanner(System.in);
         while (scan.hasNextLine()){
