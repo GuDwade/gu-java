@@ -51,7 +51,7 @@ public class Day13 {
 
 
     private void mergeAndCountSmaller(int[] nums, int l, int r) {
-        if (l == r) {
+        if (l >= r) {
             // 数组只有一个元素的时候，没有比较，不统计
             return;
         }
@@ -60,13 +60,12 @@ public class Day13 {
         mergeAndCountSmaller(nums, mid + 1, r);
         // 归并排序的优化，同样适用于该问题
         // 如果索引数组有序，就没有必要再继续计算了
-        if (nums[indexes[mid]] > nums[indexes[mid + 1]]) {
-            mergeOfTwoSortedArrAndCountSmaller(nums, l, mid, r);
-        }
+        mergeOfTwoSortedArrAndCountSmaller(nums, l, mid, r);
+
     }
 
-
-    private void mergeOfTwoSortedArrAndCountSmaller(int[] nums, int l, int mid, int r) {
+    //升序排列
+    private void mergeOfTwoSortedArrAndCountSmaller1(int[] nums, int l, int mid, int r) {
         for (int i = l; i <= r; i++) {
             temp[i] = indexes[i];
         }
@@ -96,8 +95,37 @@ public class Day13 {
 
     }
 
+    //逆序排列
+    private void mergeOfTwoSortedArrAndCountSmaller(int[] nums, int l, int mid, int r) {
+        int i=l,j=mid+1,idx=l;
+
+        while (i<=mid&&j<=r){
+            if (nums[indexes[i]]<=nums[indexes[j]]){
+                temp[idx++]=indexes[j++];
+            }else{
+                counter[indexes[i]]+=r-j+1;
+                temp[idx++]=indexes[i++];
+            }
+        }
+
+        while (i<=mid){
+            temp[idx++]=indexes[i++];
+        }
+
+        while (j<=r){
+            temp[idx++]=indexes[j++];
+        }
+
+        for(int k=l;k<=r;k++){
+            indexes[k]=temp[k];
+        }
+    }
+
     public static void main(String[] args) {
         Day13 test=new Day13();
-        test.countSmaller(new int[]{5,2,6,1});
+        Integer[]arr=test.countSmaller(new int[]{5,2,6,1}).toArray(new Integer[]{});
+        System.out.println(Arrays.toString(arr));
+
+
     }
 }
