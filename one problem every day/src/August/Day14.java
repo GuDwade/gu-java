@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Day14 {
 
-    //平衡二叉树
+   
 
     public boolean isBalanced(TreeNode root) {
         if(root==null){
