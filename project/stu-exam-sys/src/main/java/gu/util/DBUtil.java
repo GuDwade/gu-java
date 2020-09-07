@@ -10,7 +10,7 @@ import java.sql.Statement;
 
 public class DBUtil {
 
-    private static  volatile DataSource DATA_SOURCE;
+    private volatile static   DataSource DATA_SOURCE;
     private  static  final  String URL="jdbc:mysql://localhost:3306/stu_exam";
     private  static  final  String USERNAME="root";
     private  static  final  String PASSWORD="";
