@@ -9,8 +9,6 @@ function apiGet(url) {
                 reject(xhr.responseText);  
                 return;
             }
-
-            // { status: 200, data: ... }
             let result = JSON.parse(xhr.responseText);
             if (result.status !== 200) {   
                 reject(result.reason);  
