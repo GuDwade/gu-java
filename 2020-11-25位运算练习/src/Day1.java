@@ -1,9 +1,9 @@
 import java.util.Arrays;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 public class Day1 {
+
     public int countPrimeSetBits(int L, int R) {
         int cnt = 0;
         for (int i = L; i <= R; i++) {
