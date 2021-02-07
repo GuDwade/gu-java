@@ -1,7 +1,7 @@
 package Feb;
 
 public class Day2 {
-    //替换后的最长重复字符  
+    //替换后的最长重复字符
     public static int characterReplacement(String s, int k) {
 
        if (s == null || s.length() == 0 ){
