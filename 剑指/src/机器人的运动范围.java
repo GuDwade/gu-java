@@ -49,5 +49,6 @@ public class 机器人的运动范围 {
         机器人的运动范围  test = new 机器人的运动范围();
         test.movingCount(1,2,1);
 
+
     }
 }
